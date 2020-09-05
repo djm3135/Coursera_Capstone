@@ -1,0 +1,81 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Coursera Capstone: Road Accident Data, 1979-2015\n",
+    "\n",
+    "This notebook is to be used exclusively for the Coursera Capstone project."
+   ]
+  },
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Background and Objectives\n",
+    "\n",
+    "\n",
+    "Reducing accidents on the road represents a major objective of all governments around the world. During 2018 on the UK's roads alone, the number of killed or seriously injured (KSI) amounted to 27295. Total prevention costs from reported road accidents amounted to 16.5 billion British pounds in 2018. Between 2010 and 2018, figures had grown by approximately 9 percent, while the lowest figure had been recorded in 2013. On average a fatal accident resulted in nearly 2.2 million British pounds in prevention costs in 2018, while slight accidents resulted in costs of £26,100.\n",
+    "\n",
+    "Gaining insight into how the statistics of KSI can be reduced is therefore of critical importance to the government's aims, in order to improve the safety for UK citizens whilst travelling, as well as for economic reasons.\n",
+    "\n",
+    "The data I will analyse was compiled and published by the UK Government's Department for Transport, and is comprised of data on accidents and a range of characteristics of vehicles concerned. I intend to analyse the data-set's features, and see which may be correlated to our target variable (accident severity).\n",
+    "\n",
+    "This notebook seeks to investigate and come to some conclusions regarding data on road accidents, sourced at https://www.kaggle.com/akshay4/road-accidents-incidence, in particular what features of accidents we can link to their severity, and how we can use these features to accurately predict this characteristic. If we can understand some causes or correlations of KSI on the road, we can hopefully reduce the statistics.\n",
+    "This would allow them to take steps to mitigate and reduce the severity of accidents on the country's roads, thereby improving public health and wellbeing."
+   ]
+  },
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Data Preparation \n",
+    "\n",
+    "This data-set (.csv) reflects Road Accidents in UK between 1979 and 2015 and has 70 features/columns and about 250K rows.\n",
+    "\n",
+    "The data set consists of the following features, which are a mixture of string, integer, and float objects: \n",
+    "\n",
+    "accident_index\tvehicle_reference\tvehicle_type\ttowing_and_articulation\tvehicle_manoeuvre\tvehicle_location-restricted_lane\tjunction_location\tskidding_and_overturning\thit_object_in_carriageway\tvehicle_leaving_carriageway\thit_object_off_carriageway\t1st_point_of_impact\twas_vehicle_left_hand_drive?\tjourney_purpose_of_driver\tsex_of_driver\tage_of_driver\tage_band_of_driver\tengine_capacity_(cc)\tpropulsion_code\tage_of_vehicle\tdriver_imd_decile\tdriver_home_area_type\tvehicle_imd_decile\tNumber_of_Casualities_unique_to_accident_index\tNo_of_Vehicles_involved_unique_to_accident_index\tlocation_easting_osgr\tlocation_northing_osgr\tlongitude\tlatitude\tpolice_force\taccident_severity\tnumber_of_vehicles\tnumber_of_casualties\tdate\tday_of_week\ttime\tlocal_authority_(district)\tlocal_authority_(highway)\t1st_road_class\t1st_road_number\troad_type\tspeed_limit\tjunction_detail\tjunction_control\t2nd_road_class\t2nd_road_number\tpedestrian_crossing-human_control\tpedestrian_crossing-physical_facilities\tlight_conditions\tweather_conditions\troad_surface_conditions\tspecial_conditions_at_site\tcarriageway_hazards\turban_or_rural_area\tdid_police_officer_attend_scene_of_accident\tlsoa_of_accident_location\tcasualty_reference\tcasualty_class\tsex_of_casualty\tage_of_casualty\tage_band_of_casualty\tcasualty_severity\tpedestrian_location\tpedestrian_movement\tcar_passenger\tbus_or_coach_passenger\tpedestrian_road_maintenance_worker\tcasualty_type\tcasualty_home_area_type\tcasualty_imd_decile.\n",
+    "\n",
+    "To analyse this dataset I will use standard Python libraries Pandas, NumPy and Matplotlib to assess correlations between features and the target variable Accident Severity. Prior to training and testing machine learning models, I will look to clean, change object type, balance, possibly normalise or standardise the data, perform feature-engineering, fill in or delete rows with missing values and so on. I will likely return to the data preparation stage at later points in my analysis. As there are a lot of features, I will seek to select the ones which seem most closely correlated with the target variable.\n",
+    "\n",
+    "As part of my analysis, I also want to understand what trends or skewed information there are in the data.\n",
+    "\n",
+    "Once I have found some useful correlations, I will train and test different supervised learning models to see if any can accurately predict the target variable values. I will evaluate the models' performance, and fine tune their parameters if necessary. \n",
+    "\n",
+    "As the target variable is a categorical and not continuous variable (1, 2 or 3), I will test out a range of classification models (K-Nearest-Neighbours, Logistical Regression etc.), and see which performs best."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
